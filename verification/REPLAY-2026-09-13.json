@@ -1,0 +1,127 @@
+{
+  "result": "PASS",
+  "convention_sets": 4511,
+  "standard_greedy_terms": [
+    1,
+    2,
+    4,
+    8,
+    13,
+    21,
+    31,
+    45,
+    66,
+    81,
+    97,
+    123,
+    148,
+    182,
+    204,
+    252,
+    290,
+    361,
+    401,
+    475,
+    565,
+    593,
+    662,
+    775,
+    822,
+    916,
+    970,
+    1016,
+    1159,
+    1312,
+    1395,
+    1523,
+    1572,
+    1821,
+    1896,
+    2029,
+    2254,
+    2379,
+    2510,
+    2780
+  ],
+  "formal_predicate_terms": [
+    1,
+    2,
+    4,
+    8,
+    13,
+    21,
+    31,
+    45,
+    66,
+    81,
+    97,
+    123,
+    148,
+    182,
+    204,
+    252,
+    290,
+    361,
+    401,
+    475,
+    565,
+    593,
+    662,
+    775,
+    822,
+    916,
+    970,
+    1016,
+    1159,
+    1312
+  ],
+  "formal_density_control_max_N": 1312,
+  "finite_constructions": [
+    {
+      "p": 3,
+      "size": 3,
+      "largest_original": 13
+    },
+    {
+      "p": 5,
+      "size": 5,
+      "largest_original": 41
+    },
+    {
+      "p": 7,
+      "size": 7,
+      "largest_original": 85
+    },
+    {
+      "p": 11,
+      "size": 11,
+      "largest_original": 221
+    },
+    {
+      "p": 13,
+      "size": 13,
+      "largest_original": 313
+    },
+    {
+      "p": 17,
+      "size": 17,
+      "largest_original": 545
+    },
+    {
+      "p": 19,
+      "size": 19,
+      "largest_original": 685
+    },
+    {
+      "p": 23,
+      "size": 23,
+      "largest_original": 1013
+    },
+    {
+      "p": 29,
+      "size": 29,
+      "largest_original": 1625
+    }
+  ],
+  "scope": "Finite controls only; no fresh Lean compilation or infinite-density conclusion"
+}

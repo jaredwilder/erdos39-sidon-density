@@ -1,0 +1,42 @@
+{
+  "source_repo": "jaredwilder/erdos-campaign-archive",
+  "source_commit": "dad8bf3925ec7584a2e782b06e102e54587c2094",
+  "source_prefix": "campaigns/erdos39-close-2026-09-05",
+  "files": [
+    {
+      "source_path": "LICENSE",
+      "destination": "LICENSE",
+      "bytes": 11358,
+      "source_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source_path": "campaigns/erdos39-close-2026-09-05/E39.lean",
+      "destination": "research/E39.lean",
+      "bytes": 20520,
+      "source_blob": "5f50201d33380cf08bd29c0c1649b8418903f838",
+      "sha256": "f8e3cdaf8b2b5f7a36e8365004dea69bba865a0c244a52597fec368f0b76187e"
+    },
+    {
+      "source_path": "campaigns/erdos39-close-2026-09-05/build-receipt.txt",
+      "destination": "research/build-receipt.txt",
+      "bytes": 1722,
+      "source_blob": "6971f61c9ab397be31728de5554efa4612524b8a",
+      "sha256": "3de146d576f9e58c9afffd1226cc7bc5b551bd03c26a74c616a28c735d2ed21a"
+    },
+    {
+      "source_path": "campaigns/erdos39-close-2026-09-05/receipts.json",
+      "destination": "research/receipts.json",
+      "bytes": 9769,
+      "source_blob": "c34fbec7d9bd2a87ac135915f0210f1561efbc61",
+      "sha256": "96f02320d2f4bcc57f9655c8defb5b5ab5c95f658cea4fd4db0a0d782835412c"
+    },
+    {
+      "source_path": "campaigns/erdos39-close-2026-09-05/sidon_receipts.py",
+      "destination": "research/sidon_receipts.py",
+      "bytes": 14936,
+      "source_blob": "cf8aafe5fc860b2c97653cd1734c4d5128435613",
+      "sha256": "2c36c6eb884b390ec6720d55a6003b0262042089b464dd6e7074277b52d3b65a"
+    }
+  ]
+}

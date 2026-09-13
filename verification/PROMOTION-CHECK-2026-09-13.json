@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-13",
+  "byte_integrity": {
+    "result": "PASS",
+    "public_source_files": 5,
+    "source_commit": "dad8bf3925ec7584a2e782b06e102e54587c2094"
+  },
+  "fresh_lean_build": false,
+  "historical_source_hash_match": "f8e3cdaf8b2b5f7a36e8365004dea69bba865a0c244a52597fec368f0b76187e"
+}

@@ -1,0 +1,408 @@
+{
+ "campaign": "erdos39-close-2026-09-05",
+ "python": "3.13.2",
+ "arm_A_convention": {
+  "tested": 4511,
+  "disagreements": [],
+  "agree": true
+ },
+ "arm_B_external_crosscheck": {
+  "reference": "OEIS A005282 (Mian-Chowla), first 50 terms, retrieved 2026-09-05",
+  "terms_compared": 50,
+  "matches": true,
+  "first_mismatch_index": null
+ },
+ "arm_B_lean_predicate": {
+  "definition": "Erdos39.G / Erdos39.Greedy of E39.lean (least x > max A, x not in Blocked A)",
+  "k": 60,
+  "first_25": [
+   1,
+   2,
+   4,
+   8,
+   13,
+   21,
+   31,
+   45,
+   66,
+   81,
+   97,
+   123,
+   148,
+   182,
+   204,
+   252,
+   290,
+   361,
+   401,
+   475,
+   565,
+   593,
+   662,
+   775,
+   822
+  ],
+  "sidon_verified_by_sums": true,
+  "agrees_with_A005282_greedy": true,
+  "first_divergence_index": null,
+  "lean_floor_bound_holds": true,
+  "note": "Blocked over-approximates (it floor-halves ODD sums too). Every E39.lean theorem only uses 'not blocked => extendable', so all proved statements hold for whichever sequence this is.",
+  "sha256_witness": "96ed7abf7e7bf89a7da7de092c9af6b79aabd6479d35a98ac832514ebf367c87"
+ },
+ "arm_B_greedy": {
+  "source": "greedy Sidon set, diagonal-allowed convention (= Erdos39.SidonF)",
+  "k_reached": 900,
+  "a_k": 10441056,
+  "seconds": 5.55,
+  "first_25": [
+   1,
+   2,
+   4,
+   8,
+   13,
+   21,
+   31,
+   45,
+   66,
+   81,
+   97,
+   123,
+   148,
+   182,
+   204,
+   252,
+   290,
+   361,
+   401,
+   475,
+   565,
+   593,
+   662,
+   775,
+   822
+  ],
+  "prefix_sidon_verified_by_sums": true,
+  "full_set_sidon_by_differences": true,
+  "lean_floor_theorem": "N <= k + k^3 + k^2  (Erdos39.maximal_sidon_dense)",
+  "lean_floor_violations": [],
+  "max_ratio_a_k_over_k_cubed": {
+   "k": 1,
+   "ratio": 1.0
+  },
+  "measured_exponent_theta_a_k_~_k^theta": 2.7448,
+  "implied_counting_exponent_1_over_theta": 0.3643,
+  "erdos39_target_exponent": 0.5,
+  "published_record_ruzsa": 0.414214,
+  "proved_greedy_floor_exponent": 0.333333,
+  "sha256_witness": "b0434f3320a081a0e9ce39fa4e1d2f1d263d50290c78651a3f2067d8163c19bc"
+ },
+ "arm_C_erdos_turan": {
+  "construction": "{2pk + (k^2 mod p) : 0 <= k < p}",
+  "lean_ceiling_theorem": "k^2 <= k + 2N + 1  (Erdos39.sidon_card_sq_le)",
+  "instances": [
+   {
+    "p": 7,
+    "card": 7,
+    "N": 85,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7593,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "f6be3059c6ded379bcc761233b3475f315dcb17fe6610758a1ff9cb1a7c67a48"
+   },
+   {
+    "p": 11,
+    "card": 11,
+    "N": 221,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7399,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "dde67f8cb47bf942d014a52d83ad665c37a4943504906575b435a68262d3f25f"
+   },
+   {
+    "p": 13,
+    "card": 13,
+    "N": 313,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7348,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "7d71ddca54e6a37f54a3232444b26dcec5266349f26000c66179d706a420fbb6"
+   },
+   {
+    "p": 17,
+    "card": 17,
+    "N": 545,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7282,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "b085e542fa0887757388dd532f75968e2cae393ebc814a450564868ea8c38def"
+   },
+   {
+    "p": 19,
+    "card": 19,
+    "N": 685,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.726,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "c4b9753d94fe6d3dd70915dde80ccad305403390273133eef8d21ed510023bd2"
+   },
+   {
+    "p": 23,
+    "card": 23,
+    "N": 1013,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7226,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "bd006b72b469a791fad0cc252025887ff28987dabf812f7f5857e1864a33d4c9"
+   },
+   {
+    "p": 31,
+    "card": 31,
+    "N": 1861,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7186,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "618d29ca863295ff4ec159c257a0a54920311cf8cf3fdb4e111c377c646415b5"
+   },
+   {
+    "p": 61,
+    "card": 61,
+    "N": 7321,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7129,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "70541d222bef837aa4794f83e63e500b6eeef88a56fe7ac41a75fb1cc22ce0b4"
+   },
+   {
+    "p": 127,
+    "card": 127,
+    "N": 32005,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7099,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "2fd7a55c6a615288968dd639c21e8acb154f7cb181f060b8d1af71eb1c7f1826"
+   },
+   {
+    "p": 251,
+    "card": 251,
+    "N": 125501,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7085,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "7e477678dc0aefdde23663a63c535820b5559e8f2625232c08ea1b95843eac66"
+   },
+   {
+    "p": 509,
+    "card": 509,
+    "N": 517145,
+    "sidon_by_sums": true,
+    "sidon_by_diffs": true,
+    "density_card_over_sqrtN": 0.7078,
+    "lean_ceiling_k2_le_k_plus_2N_plus_1": true,
+    "sha256_witness": "77ba164b3eb79dee2542510ddda83740c4bf4379005e726398a31d0b734c44cd"
+   }
+  ],
+  "all_sidon": true,
+  "all_respect_ceiling": true
+ },
+ "arm_D_counting_obstruction": {
+  "question": "does the #39 target density k = ceil(c*N^(1/2-eps)) ever violate the machine-checked ceiling k^2 <= k + 2N + 1 (Erdos39.sidon_card_sq_le) for LARGE N?",
+  "closed_form_threshold": "N0(eps,c) = (c^2/2)^(1/(2*eps)), finite for every eps>0",
+  "eps_values": [
+   0.25,
+   0.1,
+   0.05,
+   0.01,
+   0.001,
+   1e-06
+  ],
+  "implied_constants_tested": [
+   1.0,
+   2.0,
+   10.0,
+   100.0
+  ],
+  "per_pair": [
+   {
+    "eps": 0.25,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.25,
+    "c": 2.0,
+    "log10_N0": 0.602,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.25,
+    "c": 10.0,
+    "log10_N0": 3.398,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.25,
+    "c": 100.0,
+    "log10_N0": 7.398,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.1,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.1,
+    "c": 2.0,
+    "log10_N0": 1.505,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.1,
+    "c": 10.0,
+    "log10_N0": 8.495,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.1,
+    "c": 100.0,
+    "log10_N0": 18.495,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.05,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.05,
+    "c": 2.0,
+    "log10_N0": 3.01,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.05,
+    "c": 10.0,
+    "log10_N0": 16.99,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.05,
+    "c": 100.0,
+    "log10_N0": 36.99,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.01,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.01,
+    "c": 2.0,
+    "log10_N0": 15.051,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.01,
+    "c": 10.0,
+    "log10_N0": 84.949,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.01,
+    "c": 100.0,
+    "log10_N0": 184.949,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.001,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 0.001,
+    "c": 2.0,
+    "log10_N0": 150.515,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.001,
+    "c": 10.0,
+    "log10_N0": 849.485,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 0.001,
+    "c": 100.0,
+    "log10_N0": 1849.485,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 1e-06,
+    "c": 1.0,
+    "log10_N0": 0.0,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": null
+   },
+   {
+    "eps": 1e-06,
+    "c": 2.0,
+    "log10_N0": 150514.998,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 1e-06,
+    "c": 10.0,
+    "log10_N0": 849485.002,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   },
+   {
+    "eps": 1e-06,
+    "c": 100.0,
+    "log10_N0": 1849485.002,
+    "ceiling_holds_above_N0": true,
+    "violated_just_below_N0": true
+   }
+  ],
+  "pairs_where_ceiling_fails_above_N0": [],
+  "obstruction_active_asymptotically": false,
+  "reading": "For every eps>0 and every implied constant c, the ceiling is violated only for N below the finite threshold N0(eps,c) -- exactly what the threshold N0(eps) in `>>_eps` permits. The pigeonhole/counting obstruction is therefore never asymptotically active against the #39 target. Consequence: a NEGATIVE close of #39 cannot come from counting, and a POSITIVE close must be a CONSTRUCTION. Elementary; stated here because it is the only cheap obstruction the ceiling theorem supplies."
+ }
+}

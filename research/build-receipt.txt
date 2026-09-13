@@ -1,0 +1,31 @@
+=== E39.lean build receipt ===
+campaign: erdos39-close-2026-09-05
+utc: 2026-09-05T17:54:30Z
+host: root@51.158.234.15 (rented box)
+toolchain: leanprover/lean4:v4.31.0-rc1
+mathlib: 919544d4309104b3f19724b0e6e48c701d27948f
+local sha256(E39.lean): f8e3cdaf8b2b5f7a36e8365004dea69bba865a0c244a52597fec368f0b76187e
+loc: 460
+sorry occurrences in proof text: 0
+0
+
+=== command ===
+nice -n 19 env LEAN_NUM_THREADS=2 lake env lean E39.lean
+
+=== output ===
+f8e3cdaf8b2b5f7a36e8365004dea69bba865a0c244a52597fec368f0b76187e  E39.lean
+'Erdos39.sidon_card_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.count_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.card_blocked_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.sidon_insert_of_not_blocked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.maximal_sidon_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.maximal_sidon_dense_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.exists_dense_sidon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.blocked_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.G_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.G_snd_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.greedy_is_sidon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.greedy_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.greedy_count_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos39.greedy_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT=0
