@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Erdos #39: infinite Sidon sets and density"
+authors:
+  - family-names: "Wilder"
+    given-names: "Jared"
+type: software
+repository-code: "https://github.com/jaredwilder/erdos39-sidon-density"
+license: Apache-2.0
